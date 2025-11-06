@@ -15,7 +15,7 @@ const CONTACT_INFO = {
   instagramHandle: '@honnavara__back.water',
   whatsappNumber: '919731520326',
   address: 'Unbounded Heaven, Honnavar, Karnataka, India',
-  mapLink: 'https://maps.app.goo.gl/5p16HyT5aXxTQpkP9'
+  mapLink: 'https://www.google.com/maps?ll=14.277343,74.459412&z=15&t=m&hl=en-US&gl=US&mapclient=embed&q=14%C2%B016%2738.4%22N+74%C2%B027%2733.9%22E+14.277343,+74.459412@14.2773428,74.4594116'
 };
 
 // --- IconCard Component ---
