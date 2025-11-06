@@ -29,7 +29,7 @@ const PRICING_PACKAGES: PricingCardProps[] = [
     {
         duration: '2 Hour',
         title: 'Golden Window',
-        price: '₹2000',
+        price: '₹2500',
         tag: 'EXTENDED',
         isExtended: true,
         features: [
@@ -41,7 +41,7 @@ const PRICING_PACKAGES: PricingCardProps[] = [
     },
     {
         duration: 'Pre-Wedding',
-        title: 'Directed 2H',
+        title: 'Directed 1.5H',
         price: '₹2500',
         tag: 'CINEMATIC',
         isCinematic: true,

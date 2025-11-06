@@ -3,13 +3,13 @@ import { Sailboat, Camera } from 'lucide-react';
 
 // Refined Mock Data to match the image content style (Title and Description)
 const GALLERY_IMAGES = [
-    { id: 1, title: "PRIVATE RIDE", description: "Calm reflective waters at Kerala Spot.", url: "/HonnavarBoating28.webp" },
-    { id: 2, title: "SHARAVATHI CHANNEL", description: "Natural corridors & soft gradients.", url: "/HonnavarBoating22.webp" },
+    { id: 1, title: "PRIVATE RIDE", description: "Calm reflective waters at Kerala Spot.", url: "/top_v.webp" },
+    { id: 2, title: "SHARAVATHI CHANNEL", description: "Natural corridors & soft gradients.", url: "/side_home_v.webp" },
     { id: 3, title: "LOTUS POINT", description: "Bloom frames during seasonal peak.", url: "/Screenshot_20250105-073619_Chrome-890x1024.webp" },
-    { id: 4, title: "MANGROVE TUNNEL", description: "Filtered light & eco texture.", url: "/OIP.webp" },
+    { id: 4, title: "MANGROVE TUNNEL", description: "Filtered light & eco texture.", url: "/mang_for.webp" },
     { id: 5, title: "SUNSET ROUTE", description: "Golden reflections & silhouettes.", url: "/BoatBridge-Honavar.webp?" },
-    { id: 6, title: "QUIET DRIFT", description: "Private experience & space.", url: "/11.webp" },
-    { id: 7, title: "GOLDEN HOUR", description: "Edge light shimmer moments.", url: "/image-5-1024x683.webp" },
+    { id: 6, title: "QUIET DRIFT", description: "Private experience & space.", url: "/home_v.webp" },
+    { id: 7, title: "GOLDEN HOUR", description: "Edge light shimmer moments.", url: "river_v.webp" },
     { id: 8, title: "KERALA FEEL", description: "Classic backwater aesthetic.", url: "/allapey011.webp" },
 ];
 

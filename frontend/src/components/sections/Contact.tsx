@@ -130,7 +130,7 @@ const Contact: FC = () => {
                 </div>
 
 
-                {/* Instagram */}   
+                {/* Instagram */}
                 <div className="flex items-center gap-3 w-full">
                   <Instagram className="w-6 h-6 mr-3 mt-1 text-indigo-300 flex-shrink-0 align justify-center" />
                   <div className="w-full">
@@ -195,7 +195,7 @@ const Contact: FC = () => {
         {/* Embedded Google Map */}
         <div className="relative w-full h-96 bg-gray-100">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3933.235646301284!2d74.4425!3d14.2832!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbb7c2c2c46d4f3%3A0x7f3c6ed07db79262!2sHonnavar%20Backwaters!5e0!3m2!1sen!2sin!4v1709832269985!5m2!1sen!2sin"
+            src="https://www.google.com/maps?q=14.2773427963257,74.4594116210938&z=15&output=embed"
             width="100%"
             height="100%"
             style={{ border: 0 }}

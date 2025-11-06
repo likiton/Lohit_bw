@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from "react";
 
 const images = [
-  "/avyukta-boat.webp",
-  "/11.webp",
-  "/allapey011.webp",
+  "/top_v.webp",
+  "/side_home_v.webp",
+  "/home_v.webp",
   "/BoatBridge-Honavar.webp",
-  "/HonnavarBoating22.webp",
+  "river_v.webp",
   "/HonnavarBoating28.webp",
-  "/image-5-1024x683.webp",
+  "/river_v.webp",
   "/OIP.webp",
   "/Screenshot_20250105-073619_Chrome-890x1024.webp",
 ];

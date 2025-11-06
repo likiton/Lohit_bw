@@ -30,7 +30,7 @@ const Footer: React.FC = () => {
                     <p className="text-gray-300 text-sm">+91 97315 20326</p>
                     <div className="flex space-x-3 mt-2"><div>
                         <p className="font-semibold text-indigo-200">Follow Us</p>
-                        <a href={`https://instagram.com/@honnavara__back.water}`} target="_blank" rel="noopener noreferrer" className="text-lg hover:underline transition">Instagram</a>
+                        <a href={`https://instagram.com/honnavara__back.water/`} target="_blank" rel="noopener noreferrer" className="text-lg hover:underline transition">Instagram</a>
                     </div>
 
                         {/* <a href="#" className="text-gray-300 hover:text-white transition-colors">Instagram</a> */}
@@ -44,7 +44,7 @@ const Footer: React.FC = () => {
             <div className="border-t border-indigo-700 mt-8 pt-6">
                 <p className="text-center text-gray-400 text-sm">
                     &copy; {new Date().getFullYear()} Avyukta. All rights reserved. <br />
-                    Designed by <span className="text-white font-semibold">LiKitON</span>.
+                    Designed by <span className="text-white font-semibold"><a href="https://www.instagram.com/likiton_/" target='_blank'>LiKitON</a></span>.
                 </p>
             </div>
         </footer>
