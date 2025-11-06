@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import { FC } from 'react';
 import { Sailboat, Camera } from 'lucide-react';
 
 // Refined Mock Data to match the image content style (Title and Description)

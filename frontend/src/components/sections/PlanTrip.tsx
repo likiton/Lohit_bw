@@ -1,11 +1,11 @@
 import React from 'react';
 
 // --- TYPE DEFINITIONS ---
-interface StepCardProps {
-  step: number;
-  title: string;
-  description: string;
-}
+// interface StepCardProps {
+//   step: number;
+//   title: string;
+//   description: string;
+// }
 
 interface ReadMoreCardProps {
   title: string;
@@ -105,22 +105,22 @@ const ReadMoreCard: React.FC<ReadMoreCardProps> = ({ title, description, tag, bo
   );
 };
 
-const StepCard: React.FC<StepCardProps> = ({ step, title, description }) => {
-  return (
-    <div className="flex flex-col items-start justify-between space-y-2 h-full p-4 bg-white rounded-xl shadow-lg border border-gray-200 transform transition-transform duration-300 hover:scale-[1.02]">
-      <div className="flex items-center space-x-2">
-        <div className="w-7 h-7 flex items-center justify-center rounded-full bg-indigo-500 text-white font-black text-sm shadow-md">
-          {step}
-        </div>
-        <h4 className="text-base font-bold text-gray-800">{title}</h4>
-      </div>
+// const StepCard: React.FC<StepCardProps> = ({ step, title, description }) => {
+//   return (
+//     <div className="flex flex-col items-start justify-between space-y-2 h-full p-4 bg-white rounded-xl shadow-lg border border-gray-200 transform transition-transform duration-300 hover:scale-[1.02]">
+//       <div className="flex items-center space-x-2">
+//         <div className="w-7 h-7 flex items-center justify-center rounded-full bg-indigo-500 text-white font-black text-sm shadow-md">
+//           {step}
+//         </div>
+//         <h4 className="text-base font-bold text-gray-800">{title}</h4>
+//       </div>
 
-      <div className="mt-2">
-        <p className="text-xs text-gray-600">{description}</p>
-      </div>
-    </div>
-  );
-};
+//       <div className="mt-2">
+//         <p className="text-xs text-gray-600">{description}</p>
+//       </div>
+//     </div>
+//   );
+// };
 
 // --- MAIN COMPONENT ---
 const PlanTripSection: React.FC = () => {

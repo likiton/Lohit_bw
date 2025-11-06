@@ -1,4 +1,4 @@
-import React, { FC, MouseEvent, ReactNode } from 'react'; 
+import React, { MouseEvent } from 'react';
 import { NavLinkProps } from '../../types';
 
 const NavLink: React.FC<NavLinkProps> = ({ id, children, onClick, activeSection }) => {

@@ -1,23 +1,23 @@
-import React, { useState, ReactNode, FC } from 'react';
+import { ReactNode, FC } from 'react';
 
 // --- INTERFACE DEFINITIONS (Normally imported from types/index.ts) ---
 
-interface FAQItemData {
-    question: string;
-    answer: string;
-}
+// interface FAQItemData {
+//     question: string;
+//     answer: string;
+// }
 
-interface PreWeddingFAQItemProps extends FAQItemData {
-    isOpen: boolean;
-    onClick: () => void;
-}
+// interface PreWeddingFAQItemProps extends FAQItemData {
+//     isOpen: boolean;
+//     onClick: () => void;
+// }
 
 // --- PRE-WEDDING DATA ---
-const preWeddingFaqData: FAQItemData[] = [
-    { question: 'How long is ideal for pre-wedding boating?', answer: '2 hours gives reflection + lotus + silhouette sequencing without rush. 1.5H works if skipping some retries.' },
-    { question: 'Best month for pastel tones?', answer: 'October to February often provides the calmest water and cool air necessary for high-quality pastel tones and reflection symmetry.' },
-    { question: 'What if wind picks up mid-session?', answer: 'We sequence the most critical shots (reflection/lotus) early. If wind rises, we switch to directed poses, silhouette framing, and texture shots (like mangroves).' },
-];
+// const preWeddingFaqData: FAQItemData[] = [
+//     { question: 'How long is ideal for pre-wedding boating?', answer: '2 hours gives reflection + lotus + silhouette sequencing without rush. 1.5H works if skipping some retries.' },
+//     { question: 'Best month for pastel tones?', answer: 'October to February often provides the calmest water and cool air necessary for high-quality pastel tones and reflection symmetry.' },
+//     { question: 'What if wind picks up mid-session?', answer: 'We sequence the most critical shots (reflection/lotus) early. If wind rises, we switch to directed poses, silhouette framing, and texture shots (like mangroves).' },
+// ];
 
 const topFeatures = [
     { title: 'CLEAN FRAMES', subtitle: 'Minimal background clutter.', color: 'text-blue-500', bgColor: 'bg-blue-50', icon: (<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>) },
@@ -95,44 +95,44 @@ const FeatureKeyCard: FC<{ icon: ReactNode, title: string, subtitle: string, col
 /**
  * Helper for Pre-Wedding FAQ Accordion
  */
-const PreWeddingFAQItem: FC<PreWeddingFAQItemProps> = ({ question, answer, isOpen, onClick }) => {
-    return (
-        <div className={`rounded-xl shadow-sm transition duration-300 overflow-hidden ${isOpen ? 'bg-indigo-50 border-indigo-300' : 'bg-white border-gray-200'} border-2`}>
-            <button 
-                className="w-full text-left p-4 flex justify-between items-center" 
-                onClick={onClick}
-            >
-                <span className={`font-semibold ${isOpen ? 'text-indigo-700' : 'text-gray-800'}`}>{question}</span>
-                <svg xmlns="http://www.w3.org/2000/svg" className={`h-5 w-5 text-indigo-500 transform transition-transform duration-300 ${isOpen ? 'rotate-180' : 'rotate-0'}`} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                    <polyline points="6 9 12 15 18 9"></polyline>
-                </svg>
-            </button>
-            <div className={`px-4 pb-4 transition-all duration-500 ease-in-out ${isOpen ? 'max-h-96 opacity-100 pt-0' : 'max-h-0 opacity-0'}`}>
-                <p className="text-sm text-gray-600 border-t border-indigo-100 pt-3">{answer}</p>
-            </div>
-        </div>
-    );
-};
+// const PreWeddingFAQItem: FC<PreWeddingFAQItemProps> = ({ question, answer, isOpen, onClick }) => {
+//     return (
+//         <div className={`rounded-xl shadow-sm transition duration-300 overflow-hidden ${isOpen ? 'bg-indigo-50 border-indigo-300' : 'bg-white border-gray-200'} border-2`}>
+//             <button 
+//                 className="w-full text-left p-4 flex justify-between items-center" 
+//                 onClick={onClick}
+//             >
+//                 <span className={`font-semibold ${isOpen ? 'text-indigo-700' : 'text-gray-800'}`}>{question}</span>
+//                 <svg xmlns="http://www.w3.org/2000/svg" className={`h-5 w-5 text-indigo-500 transform transition-transform duration-300 ${isOpen ? 'rotate-180' : 'rotate-0'}`} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+//                     <polyline points="6 9 12 15 18 9"></polyline>
+//                 </svg>
+//             </button>
+//             <div className={`px-4 pb-4 transition-all duration-500 ease-in-out ${isOpen ? 'max-h-96 opacity-100 pt-0' : 'max-h-0 opacity-0'}`}>
+//                 <p className="text-sm text-gray-600 border-t border-indigo-100 pt-3">{answer}</p>
+//             </div>
+//         </div>
+//     );
+// };
 
 
 // --- MAIN PRE-WEDDING SECTION COMPONENT ---
 
 const PreWedding: FC = () => {
     // State to manage which individual FAQ item is open (accordion behavior)
-    const [openFAQ, setOpenFAQ] = useState<number | null>(0); 
-    // New state to manage the visibility of the entire FAQ block (collapsible behavior)
-    const [isFaqSectionVisible, setIsFaqSectionVisible] = useState<boolean>(false);
+    // const [openFAQ, setOpenFAQ] = useState<number | null>(0); 
+    // // New state to manage the visibility of the entire FAQ block (collapsible behavior)
+    // const [isFaqSectionVisible, setIsFaqSectionVisible] = useState<boolean>(false);
 
-    const toggleFaqVisibility = () => {
-        setIsFaqSectionVisible(!isFaqSectionVisible);
-        // Reset the open item when closing the whole section for a clean state
-        if (isFaqSectionVisible) {
-            setOpenFAQ(null);
-        } else {
-            // Optionally open the first item when expanding
-            setOpenFAQ(0); 
-        }
-    };
+    // const toggleFaqVisibility = () => {
+    //     setIsFaqSectionVisible(!isFaqSectionVisible);
+    //     // Reset the open item when closing the whole section for a clean state
+    //     if (isFaqSectionVisible) {
+    //         setOpenFAQ(null);
+    //     } else {
+    //         // Optionally open the first item when expanding
+    //         setOpenFAQ(0); 
+    //     }
+    // };
 
     return (
         <section id="preWedding" className="py-10 md:py-10 px-4 lg:px-12 bg-gray-50">

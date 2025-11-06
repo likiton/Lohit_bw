@@ -1,5 +1,5 @@
 import React, { FC, useState } from 'react';
-import { Mail, Instagram, Phone, Sailboat, Send, MapPin, Map, Waypoints, DollarSign } from 'lucide-react';
+import { Instagram, Phone, Send, MapPin, Map, DollarSign } from 'lucide-react';
 
 // WhatsApp SVG Icon as JSX
 const WhatsAppIcon = (

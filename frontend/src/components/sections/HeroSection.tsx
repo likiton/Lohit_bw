@@ -1,4 +1,4 @@
-import React, { FC, MouseEvent } from 'react';
+import React, { MouseEvent } from 'react';
 import { Phone } from "lucide-react"; // ✅ Import the phone icon
 
 const HeroSection: React.FC = () => {

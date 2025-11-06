@@ -1,4 +1,4 @@
-import React, { FC, ReactNode } from 'react';
+import React from 'react';
 import { SectionProps } from '../../types';
 
 // Update your SectionProps type to include children

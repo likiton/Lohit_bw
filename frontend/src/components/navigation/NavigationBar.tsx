@@ -1,5 +1,4 @@
 import React, { useState, useEffect, useRef } from "react";
-import { motion, AnimatePresence } from "framer-motion";
 import { NAV_ITEMS } from "../../data/navData";
 import Logo from "./Logo";
 import MobileMenuButton from "./MobileMenuButton";

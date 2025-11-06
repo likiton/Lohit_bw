@@ -1,7 +1,6 @@
 import React, { FC } from 'react';
 import { NAV_ITEMS } from '../../data/navData';
-import NavLink from './NavLink';
-import { DesktopNavProps, NavItem } from '../../types';
+import { DesktopNavProps} from '../../types';
 
 
 const DesktopNav: FC<DesktopNavProps> = ({ activeSection, onLinkClick }) => {

@@ -1,4 +1,4 @@
-import React, { FC, Dispatch, SetStateAction } from 'react';
+import { FC} from 'react';
 import { MobileMenuButtonProps } from '../../types';
 
 const MobileMenuButton: FC<MobileMenuButtonProps> = ({ isMenuOpen, setIsMenuOpen }) => {
