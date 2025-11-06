@@ -79,7 +79,7 @@ const App: React.FC = () => {
         .hero-section {
           height: 100vh;
           background: linear-gradient(rgba(130,126,247,0.6), rgba(0,0,0,0.8)),
-                      url('/src/images/hero.webp'); /* 👈 Replace with your hero image */
+                      url('/hero.webp'); /* 👈 Replace with your hero image */
           background-size: cover;
           background-position: center;
           background-attachment: fixed;

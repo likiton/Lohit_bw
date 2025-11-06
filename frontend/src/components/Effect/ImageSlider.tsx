@@ -1,15 +1,15 @@
 import React, { useState, useEffect } from "react";
 
 const images = [
-  "src/images/avyukta-boat.webp",
-  "src/images/gallery/11.webp",
-  "src/images/gallery/allapey011.webp",
-  "src/images/gallery/BoatBridge-Honavar.webp",
-  "src/images/gallery/HonnavarBoating22.webp",
-  "src/images/gallery/HonnavarBoating28.webp",
-  "src/images/gallery/image-5-1024x683.webp",
-  "src/images/gallery/OIP.webp",
-  "src/images/gallery/Screenshot_20250105-073619_Chrome-890x1024.webp",
+  "/avyukta-boat.webp",
+  "/11.webp",
+  "/allapey011.webp",
+  "/BoatBridge-Honavar.webp",
+  "/HonnavarBoating22.webp",
+  "/HonnavarBoating28.webp",
+  "/image-5-1024x683.webp",
+  "/OIP.webp",
+  "/Screenshot_20250105-073619_Chrome-890x1024.webp",
 ];
 
 const ImageSlider: React.FC = () => {
